@@ -112,7 +112,7 @@ th, td {
 }
 
 th {
-    background-color: rgba(211, 203, 203, 0.904);
+    background-color:rgba(211, 203, 203, 0.904);
 }
   
 .check {
@@ -133,7 +133,7 @@ th {
     cursor: pointer;
 }
   
-  .check:hover {
+.check:hover {
     background-color: #3e8e41;
 }
 

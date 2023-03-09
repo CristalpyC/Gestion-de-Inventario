@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'gestion/css/design.css' %}?1.2" media = "all">
+    <title></title>
+</head>
+<header>
+    <div id="menu">
+        <div id="logo">QP 💡</div>
+        <div id="search">
+          <input type="text" placeholder="Buscar producto...">
+          <button>🔍︎</button>
+        </div>
+      </div>
+</header>
+<body>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% extends "Gestion/fathertemplate.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5434/5434480.png">
+    <title>Gestión de inventario</title>
+</head>
+<body>
+    {% block content %}
+    <h1>PRODUCTOS</h1>
+    <button class="b-agregar">Nuevo +</button>
+    <table>
+        <tr>
+          <th>ID</th>
+          <th>Producto</th>
+          <th>Categoría</th>
+          <th>Precio de venta</th>
+          <th>Cantidad</th>
+          <th>Codigo de costo</th>
+          <th>Editar</th>
+          <th>Eliminar</th>
+        </tr>
+        {% for data in data %}
+        <tr>
+          <td>ID</td>
+          <td>{{data.name}}</td>
+          <td>{{data.categoria}}</td>
+          <td>{{data.price}}</td>
+          <td>{{data.cantidad}}</td>
+          <td>{{data.codigo_costo}}</td>
+          <td><button class = 'check'>☑</button></td>
+          <td><button class = 'wrong'>☒</button></td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% endblock %}
+</body>
+</html>
